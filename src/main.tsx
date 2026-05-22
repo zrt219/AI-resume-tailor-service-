@@ -87,9 +87,9 @@ function App() {
             <p><strong>Fit:</strong> {packet.fit}</p>
             <p><strong>URL:</strong> <a href={packet.url} target="_blank" rel="noreferrer">{packet.url}</a></p>
             <h4>Resume draft</h4>
-            <pre>{packet.resume.map((line) => `• ${line}`).join("\n")}</pre>
+            <pre>{packet.resume.map((line) => `- ${line}`).join("\n")}</pre>
             <h4>Cover letter draft</h4>
-            <pre>{packet.coverLetter.map((line) => `• ${line}`).join("\n")}</pre>
+            <pre>{packet.coverLetter.map((line) => `- ${line}`).join("\n")}</pre>
             <h4>Evidence</h4>
             <ul>{packet.evidence.map((item) => <li key={item}>{item}</li>)}</ul>
           </div>
